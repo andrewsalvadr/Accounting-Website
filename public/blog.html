@@ -9,25 +9,26 @@
     <meta content="" name="description" />
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="index.css" />
 
     <!--Font Styles -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!--FAVICON-->
-    <link href="images/moneyleaf.ico" rel="icon" />
+    <link href="moneyleaf.ico" rel="icon" />
     <title>Money Leaf</title>
   </head>
 
   <body>
+
     <!-- Start of header -->
     <header class="fixed w-full bg-gray-50 z-50 shadow-md">
       <nav class="max-w-screen-2xl flex flex-row flex-wrap justify-between my-3 ml-auto mr-auto " role="navigation">
         <!-- COMPANY LOGO (SVG) -->
         <div class="flex items-center ml-3">
-          <a href="/index.html">
-            <image src="./images/moneyleaf.png"  class="ml-5" width="110" height="32"/>
+          <a href="index.html">
+            <image src="moneyleaf.png"  class="ml-5" width="110" height="32"/>
           </a>
         </div>
         <div class="inline-block h-8 mr-3 lg:hidden">
@@ -40,63 +41,118 @@
         <div id="nav_content" class="w-full hidden py-8 mr-3 lg:flex lg:w-auto lg:py-0 lg:items-center">
           <ul class="flex flex-col ml-auto font-medium text-sm text-gray-600 lg:flex-row">
             <li class="mx-6 w-mc hover:text-blue-500 mb-4 lg:mb-0">
-              <a href="/services.html"
+              <a href="services.html"
                 >SERVICES</a
               >
             </li>
 
                    
-            <li class="mx-6 w-mc hover:text-blue-500 mb-4 lg:mb-0"><a href="/blog.html">BLOG</a></li>
+            <li class="mx-6 w-mc hover:text-blue-500 mb-4 lg:mb-0"><a href="blog.html">BLOG</a></li>
           
-            <li class="mx-6 w-mc hover:text-blue-500 mb-4 lg:mb-0"><a href="/about.html">ABOUT</a></li>
+            <li class="mx-6 w-mc hover:text-blue-500 mb-4 lg:mb-0"><a href="about.html">ABOUT</a></li>
           
           </ul>
-          <a class="inline-block p-2 font-medium text-sm border mt-2 lg:mt-0 text-blue-500 border-blue-500 ml-6 hover:bg-blue-500 hover:text-blue-50" href="/contact.html">GET IN TOUCH</a></div>
+          <a class="inline-block p-2 font-medium text-sm border mt-2 lg:mt-0 text-blue-500 border-blue-500 ml-6 hover:bg-blue-500 hover:text-blue-50" href="contact.html">GET IN TOUCH</a></div>
       </div>
       </nav>
     </header>
 
 
-    <!-- Start of 'About Us' Landing -->
-    <section class="pt-32 px-12 pl-6 pb-24 bg-blue-100 lg:pt-44 lg:pb-32 lg:pl-32">
-      <h1 class="text-xs lg:text-base uppercase font-bold mb-3 lg:mb-6 text-blue-300">About Us</h1>
-      <p class="font-semibold lg:w-1/2 text-3xl lg:text-4xl max-w-prose text-blue-700">We are dedicated for superior, personalized tax and accounting services by providing the highest level of personalized service.</p>
+    <!-- Start of Blog-->
+    <section class="bg-blue-100 pt-24 pb-40 lg:pt-40 lg:pb-60 flex justify-center">
+      <ul class="mx-8 w-full md:mx-auto md:w-11/12 lg:mx-auto lg:w-1/2">
+      <!-- 1st Blog Post (Main)-->
+        <a href="why-you-need-an-accountant.html"><div class="md:grid md:grid-cols-5 mb-16 md:mb-12">
+          <div class="min-h-0 col-start-1 col-end-4">
+            <img class="h-full w-full object-cover rounded-md" src="blog-post-1.jpg" alt="An open notebook with a coffee cup on a desk.">
+          </div>
+          <div class="flex min-h-0 flex-col col-start-4 col-end-6 md:ml-6">
+            <div class="mt-2 md:mt-0"><span class="uppercase font-semibold text-gray-700 text-xs">Advice</span><span class="text-gray-400 mx-2 font-medium text-sm">October 15, 2021</span></div>
+            <h2 class="font-workSans text-2xl font-semibold my-2 text-gray-700">Why an accountant is needed?</h2>
+            <p class="text-sm mb-6 flex-grow text-gray-600">Without the financial information provided by expert accountants, no business can function in the competitive industry that is the current, international economy, making this an essential role for every single corporation in existence. Lets break down with each accounting terms..</p>
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-full overflow-hidden flex-shrink-0">
+                  <img class="w-full h-full object-cover object-bottom" src="writer.png" alt="A smiling female George Orwell.">
+              </div>
+              <div class="ml-2 text-xs" >
+                <span class="block font-semibold text-gray-700">Jack Smith</span>
+                <span class="block font-medium text-gray-500">Chief Technical Writer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+        <div class="md:flex">
+        <!-- 2nd Blog Post-->
+        <div class="flex flex-col md:w-1/2 md:mr-4 mb-16 md:mb-0">
+          <a href="blog.html">
+          <div>
+            <img class="h-full w-full object-cover rounded-md" src="blog-post-2.jpg" alt="An open notebook with a coffee cup on a desk.">
+          </div>
+          <div class="flex flex-col ">
+            <div class="mt-2"><span class="uppercase font-semibold text-gray-700 text-xs">Productivity</span><span class="text-gray-400 mx-2 font-medium text-sm">November 23, 2021</span></div>
+            <h2 class="font-workSans text-2xl font-semibold my-2 text-gray-700">Accounting is a business language</h2>
+            <p class="text-sm mb-6 flex-grow text-gray-600">Accounting for numbers in a business structure gives you an overview how the business in perfoming whether it is generating profits after assessing its costs and sales . It will also gives you the future forecasts whether to continue with the same business model or perharps re-invent the business to revitalise the profit margins. </p>
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-full overflow-hidden flex-shrink-0">
+                  <img class="w-full h-full object-cover object-bottom" src="writer-3.png" alt="A smiling Satoshi Nakamoto.">
+              </div>
+              <div class="ml-2 text-xs" >
+                <span class="block font-semibold text-gray-700">Owen Jackson</span>
+                <span class="block font-medium text-gray-500">Chief Technical Writer</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <!-- 3rd Blog Post-->
+        <div class="flex flex-col md:w-1/2 md:ml-4">
+          <a href="blog.html">
+          <div>
+            <img class="h-full w-full object-cover rounded-md" src="blog-post-3.jpg" alt="An open notebook with a coffee cup on a desk.">
+          </div>
+          <div class="flex flex-col">
+            <div class="mt-2"><span class="uppercase font-semibold text-gray-700 text-xs">Advice</span><span class="text-gray-400 mx-2 font-medium text-sm">July 2, 2021</span></div>
+            <h2 class="font-workSans text-2xl font-semibold my-2 text-gray-700">Tax Returns: Doing Right</h2>
+            <ul class="text-sm mb-6 flex-grow text-gray-600"><li>1. With consistent filing of return you get your capital base built.</li> <br> <li>2. This helps you to approach bank for your loan requirements like home loan etc.
+            </li> <br> <li>3. ITRs are mandatory submission while applying for visa to various countries like USA, UK, Europe etc.</li> <br> <li>4. Filing of ITR brings sense of self pride and boosts your confidence.</li></ul>
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-full overflow-hidden flex-shrink-0">
+                  <img class="w-full h-full object-cover object-bottom" src="writer-2.png" alt="A smiling female Jack Johnson.">
+              </div>
+              <div class="ml-2 text-xs" >
+                <span class="block font-semibold text-gray-700">Peter Mack</span>
+                <span class="block font-medium text-gray-500">Lead Editor</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        
+        </div>
+      </ul>
     </section>
 
-    <!-- About Us background image -->
-    <div class="about_us-image h-80 lg:h-screen">
-    </div>
-
-    <!-- Start of 'About Us' longer description/story -->
-    <section class="flex flex-col items-center pt-16 lg:pt-20 pb-40">
-      <h2 class="thick_underline tracking-wider font-bold text-3xl lg:text-4xl uppercase text-blue-700">About Money Leaf</h2>
-      <p class="max-w-prose pt-20 pb-0 px-8 lg:py-24 lg:px-0 text-gray-700">Our professionals keep abreast of the latest developments in their respective fields of expertise and use them to assist our clients in achieving their financial goals. 
-      <br><br>
-      We provide bookkeeping services, business tax, new business advisory, personal tax and much more. Whether your business is new or established, small or mid-sized, you’ll always receive the personal support and exceptional service.     
-      <br><br>
-      In addition to our wide range of business accounting and tax services, we also provide tax preparation services for individuals. When you trust us to prepare your taxes, you'll have the comfort of knowing that they've been calculated accurately and you'll get your tax refund back quickly.      <br><br>
-      We also specialize in small business accounting. Our vision is to give the best possible service for the lowest price. We have implemented a system to essentially provide the same (better) services as a large accounting firm, at an affordable rate.      <br><br>
-      <br><br>
-      <span class="text-sm font-semibold text-gray-600">- Ella Ford Medina, Director</span>
-      </p>
-    </section>
 
     <!-- Start of 'Ready To Get Started' Section -->
     <section
       class="get_started__header flex flex-col items-center pt-14 pb-16 lg:pt-18 lg:pb-20 bg-white"
     >
-      <h2 class="text-center font-bold px-4 lg:px-0 text-3xl lg:text-4xl uppercase text-blue-700">
+      <h2 class="text-center font-bold px-4 lg:px-0 text-3xl lg:text-4xl uppercase text-gray-700">
         Ready to Get Started?
       </h2>
       <a
         class="link_underline inline-block text-2xl mt-16 text-gray-600"
-        href="/contact.html"
+        href="contact.html"
         >Request a free consultation.</a
       >
     </section>
 
-<!--Footer links and social media-->
-<footer class="py-16 border-t border-blue-50 bg-blue-500">
+   <!--Footer links and social media-->
+ <footer class="py-16 border-t border-blue-50 bg-blue-500">
   <div
     class="flex flex-col lg:flex-row items-center justify-between mx-auto max-w-screen-2xl"
   >
@@ -106,21 +162,21 @@
       class="flex flex-col lg:flex-row items-center text-sm font-medium text-white py-12 lg:py-0"
     >
       <li class="mx-7 hover:text-gray-700 mb-2 lg:mb-0">
-        <a href="/services.html"
+        <a href="services.html"
           >ACCOUNTING SERVICES</a
         >
       </li>
 
       <li class="mx-7 hover:text-gray-700 mb-2 lg:mb-0">
-        <a href="/blog.html">BLOG</a>
+        <a href="blog.html">BLOG</a>
       </li>
 
       <li class="mx-7 hover:text-gray-700 mb-2 lg:mb-0">
-        <a href="/about.html">ABOUT</a>
+        <a href="about.html">ABOUT</a>
       </li>
 
       <li class="mx-7 hover:text-gray-700 mb-2 lg:mb-0">
-        <a href="/contact.html">CONTACT</a>
+        <a href="contact.html">CONTACT</a>
       </li>
     </ul>
     <div class="flex text-white">
@@ -178,10 +234,10 @@
  <!-- Fine Print-->
  <div class="flex flex-col items-center mt-24 text-xs text-white">
   <div class="mb-4">
-    <a class="mx-4 hover:text-black" href="/terms-and-conditions.html" rel="nofollow"
+    <a class="mx-4 hover:text-black" href="terms-and-conditions.html" rel="nofollow"
       >Privacy Policy</a
     >
-    <a class="mx-4 hover:text-black" href="/privacy-policy.html" rel="nofollow"
+    <a class="mx-4 hover:text-black" href="privacy-policy.html" rel="nofollow"
       >Terms &amp; Conditions</a
     >
   </div>
@@ -190,5 +246,5 @@
 </footer>
   </body>
 
-  <script src="js/index.js"></script>
+  <script src="index.js"></script>
 </html>
