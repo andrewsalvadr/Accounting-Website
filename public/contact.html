@@ -16,6 +16,21 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!--FAVICON-->
+
+  <!----EMAILJS CONTACT FORM FUNCTION------>
+
+  <script src="script.js"></script>
+
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("L32JRkpcPjOPXHBoZ");
+      })();
+      </script>
+
     <link href="moneyleaf.ico" rel="icon" />
     <title>Money Leaf</title>
   </head>
@@ -121,36 +136,27 @@
           <div class="bg-white px-8 lg:px-20 pt-12 pb-20">
             <div class="flex items-center">
               <div>
-                <h2 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">Question?</h2>
+                <h2 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">Inquiry</h2>
                 <span class="text-sm mb-4 text-gray-400">Send us a message and   we'll get in touch.</span>
+
+
                 <!-- Form -->
-                <form name="contact" data-netlify="true" autocomplete="off" netlify-honeypot="bot-field">
-                  <p class="hidden">
-                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-                  </p>
-                  <div class="input-animated">
-                    <input type="text" id="name" name="name" required pattern="\S+.*" placeholder="the placeholder"/>
-                    <label htmlFor="name" class="label-name"><span      class="content-name">Name</span></label>  
-                  </div>
-                  <div class="input-animated">
-                    <input type="email" id="email" name="email" required placeholder="the placeholder"/>
-                    <label htmlFor="email" class="label-email"><span      class="content-email">Email</span></label>  
-                  </div>
-                  <div>
-                    <textarea
-                  name="question"
-                  placeholder="Your Question"
-                  id="question"
-                  cols="30"
-                  rows="5"
-                  minLength="10"
-                  maxLength="100"
-                    required></textarea>
-                  </div>
-                  <button type="submit" id="submit-button" class="w-full uppercase text-center px-5 py-3 shadow-md my-4 lg:mb-0 bg-blue-500 border border-blue-500 text-gray-50 hover:bg-blue-400 hover:border-blue-400 focus:ring-4 focus:ring-blue-300">Send Message</button>
-                  <span id="success" class="hidden absolute mt-2 px-4 py-2 font-medium border rounded-sm border-green-500 bg-green-100 text-green-600">Thanks! We'll be in touch soon.</span>
-                  <span id="error" class="hidden absolute mt-2 px-4 py-2 font-medium border rounded-sm border-red-500 bg-red-100 text-red-600">Whoops... Something went wrong.</span>
-                </form>
+                <div class="mt-8">
+                <div class="input-animated">
+                  <label htmlFor="name" class="label-name"><span class="content-name">Name</span></label>
+                  <input class="border-0 border-b border-blue-400 mb-2" type="text" id="name" name="name" required pattern="\S+.*" placeholder="Name" />
+                </div>
+                <div class="input-animated">
+                  <label htmlFor="email" class="label-email"><span class="content-email">Email</span></label>
+                  <input class="border-0 border-b border-bottom border-blue-400 mb-5" type="email" id="email" name="email" required placeholder="Email" />
+                </div>
+                <div>
+                  <textarea class="border border-blue-600 border-solid	" type="text" name="message" placeholder="Message" id="message" cols="30" rows="5" minLength="10"
+                    maxLength="100" required></textarea>
+                </div>
+                <button onclick="sendMail()"
+                  class="w-full font-semibold rounded-tl-3xl rounded-br-3xl uppercase text-center px-5 py-3 shadow-md my-4 lg:mb-0 bg-gray-900 text-yellow-50 hover:bg-gray-700 focus:ring-4 focus:ring-yellow-300">Send
+                  Message</button>
               </div>
             </div>  
           </div>
